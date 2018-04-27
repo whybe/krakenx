@@ -121,7 +121,7 @@ class KrakenX52:
       raise Exception("!")
 
   def print_status(self):
-    print ("Device status:")
+    print ("Device status:", repr(self.dev))
     for k,v in sorted(self._receive_status().items()):
       print(k,v)
 
